@@ -1,0 +1,410 @@
+.login-page {
+    width: 100%;
+    height: 100vh;
+    background-color: #F9F8F4;
+    z-index: 100;
+    // display: flex;
+
+    .header {
+        display: flex;
+        justify-content: space-around;
+        box-sizing: border-box;
+        padding: 40px 124px;
+        width: 100%;
+        height: 140px;
+        gap: 103px;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+
+
+        .sm_infinite {
+            position: absolute;
+            top: 50.5px;
+            left: 124px;
+            height: 39px;
+        }
+
+
+
+        .login_content {
+            position: absolute;
+            right: 124px;
+            max-width: 997px;
+            width: 100%;
+            height: 60px;
+            gap: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        
+
+            .blank {
+                max-width: 689px;
+                width: 100%;
+                height: 56px;
+            }
+
+            .btn_log_sign {
+                max-width: 288px;
+                width: 100%;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .login {
+                display: flex;
+                max-width: 107px;
+                width: 100%;
+                height: 60px;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                border: none;
+                background-color: #F9F8F4;
+                cursor: pointer;
+            }
+
+            .login .log {
+                font-family: Syne;
+                font-weight: 500;
+                font-style: medium;
+                font-size: 16px;
+                line-height: 140%;
+                letter-spacing: 0px;
+                padding: 0px;
+                width: 47px;
+                height: 22px;
+                
+                /* border: none; */
+            }
+
+            .signup {
+                display: flex;
+                max-width: 167px;
+                width: 100%;
+                height: 60px;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                background: linear-gradient(135deg, #DD5690, #FDB95F);
+                border: none;
+                box-shadow: 0px 0px 1px 1px #F2A69C;
+                cursor: pointer;
+                padding: 0;
+                transition: 0.4s;
+                color: white;
+            }
+
+            .signup .sign {
+                width: 67px;
+                height: 22px;
+                font-family: Syne;
+                font-weight: 500;
+                font-style: medium;
+                font-size: 16px;
+                line-height: 140%;
+                letter-spacing: 0px;
+            }
+        }
+        
+    }
+/* ------------------------------------------------CONTAINER--------------------------------------------------- */
+  
+    .sub_container {
+        width: 100%;
+        height: 100vh;
+        margin-top: -140px;
+        display: flex;
+        flex-direction: row;
+        z-index: 1;
+        // margin-top: -140px;
+        position: relative;
+
+        .Signuptext {
+            max-width: 67px;
+            width: 100%;
+            height: 22px;
+            position: absolute;
+            top: 40px;
+            right: 57px;
+            font-family: Syne;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 140%;
+            letter-spacing: 0%;
+            text-align: center;
+            align-items: center;
+            text-decoration: underline;
+            z-index: 200;
+            display: none;
+        }
+    
+        .left {
+            width: 47.2%;
+            height: 100vh;
+            z-index: 2;
+            background: linear-gradient(181.71deg, rgba(246, 232, 234, 0.24) -5%, rgba(249, 240, 230, 0.24) 37.12%, rgba(244, 158, 109, 0.24) 143.7%);
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            // z-index: 2;
+            position: relative;
+            .bg_infinite {
+                max-width: 383px;
+                height: 383px;
+                width: 100%;
+            }
+
+            .group {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                
+                .group img {
+                    width: 100%;
+                    z-index: 1;
+                }
+            }
+        }
+
+        
+            
+        
+        .right {
+            width: 52.8%;
+            position: relative;
+            height: 100vh;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            // gap: 121px;
+            .icons {
+                width: 100%;
+                height: 126px;
+                background-color: #F9F8F4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 732px;
+                border-radius: 16px;
+            }
+                .icon_group1 {
+                    max-width: 242px;
+                    width: 100%;
+                    height: 67px;
+                    display: flex;
+                    gap: 20px;
+                    
+                
+
+                    .icon {
+                        max-width: 66px;
+                        width: 100%;
+                        height: 66px;
+                        border-radius: 50%;
+                        background: linear-gradient(#EF3C89, #F9B93F);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    
+                    .icon img {
+                        width: 34px;
+                        height: 35px;
+                    }
+                }
+            .items {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 376px;
+                width: 100%;
+                .subhead {
+                    
+                    // width: 100%;
+                    height: 52px;
+                    font-family: Montserrat;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-size: 16px;
+                    line-height: 160%;
+                    letter-spacing: 0%;
+                    // display: flex;
+                    text-align: center;
+                    margin-bottom: 40px;
+                    color: rgba(101, 70, 87, 1);
+
+                }
+
+                .welcome_back {
+                    font-family: Syne;
+                    font-weight: 600;
+                    font-style: bolder;
+                    font-size: 31px;
+                    line-height: 32px;
+                    letter-spacing: 10%;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+
+                .Typeforms_CTA {
+                    max-width: 376px;
+                    width: 100%;
+                    height: 370px;
+                    display: flex;
+                    flex-direction: column;
+                    
+                }
+
+                .Typeforms {
+                    
+                    width: 100%;
+                    height: 144px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-bottom: 76px;
+                }
+
+                .typeform {
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 60px;
+                    margin-bottom: 24px;
+                    border: 1px solid #FFFFFF;
+                    display: flex;
+                    align-items: center;
+                    flex: none;
+                    padding: 0px 10px;
+                    background-color: #FFFFFF;
+                    border-radius: 10px;
+                    padding: 0px 10px;
+                    border: 1px solid #F8E6D9;
+                    gap: 12px;
+                    // margin-right: -10px;
+                }
+
+                .typeform .Img {
+                    width: 33px;
+                    height: 24px;
+                    align-items: center;
+                    position: relative;
+                }
+
+                .typeform .Img .user-02 {
+                    
+                    position: absolute;
+                    left: 0;
+                }
+
+                .typeform .Img .lock {
+                    position: absolute;
+                    left: 0;
+                    width: 24px;
+                    height: 24px;
+                }
+
+                .typeform .Img .Divider {
+                    width: 1px;
+                    height: 20px;
+                    background-color: #F8E6D9;
+                    position: absolute;
+                    right: 0;
+                }
+
+                .Username {
+                    max-width: 291px;
+                    width: 100%;
+                    height: 44px;
+                    
+                    display: flex;
+                    align-items: center;
+                    justify-content: left;
+                    margin-left: 8px;
+                }
+
+                    .text {
+                        font-family: Cairo;
+                        font-weight: 500;
+                        font-style: Medium;
+                        font-size: 16px;
+                        line-height: 140%;
+                        letter-spacing: 0%;
+                        border: none;
+                        outline: none;
+                    }
+                    .text:focus {
+                        outline: none;
+                        border: none;
+                    }
+
+                
+
+                .typeform_Main {
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 60px;
+                    margin-bottom: 24px;
+                    display: flex;
+                    align-items: center;
+                    flex: none;
+                    border-radius: 10px;
+                    padding: 0px 10px;
+                    gap: 12px;
+                    background: linear-gradient(113.87deg, #DD5690 14.81%, #FDB95F 88.76%);
+
+                    justify-content: center;
+                    color: white;
+                    box-shadow: 0px 6px 18px 0px rgba(242, 166, 156, 1);
+                    border: none;
+                    // margin-top: 100px;
+                }
+
+                
+                .typeform_Main .proceed {
+                    max-width: 75px;
+                    width: 100%;
+                    height: 22px;
+                    font-family: Syne;
+                    font-weight: 500;
+                    font-style: medium;
+                    font-size: 16px;
+                    line-height: 140%;
+                    letter-spacing: 0%;
+                    
+
+                }
+
+                .Sub {
+                    background: linear-gradient(113.87deg, rgba(221, 86, 144, 0.1) 14.81%, rgba(252, 181, 97, 0.1) 88.76%);
+                    justify-content: center;
+                    height: 46px;
+                }
+
+                .typeform .account {
+                    max-width: 197px;
+                    width: 100%;
+                    height: 22px;
+                    font-family: Syne;
+                    font-weight: 500;
+                    font-style: medium;
+                    font-size: 16px;
+                    line-height: 140%;
+                    letter-spacing: 0%;
+                }
+            }
+        }
+        
+    }
+}

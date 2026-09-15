@@ -1,0 +1,96 @@
+// @media (max-width: 1440px) {
+//     .navbtn {
+//         display: block !important;
+//     }
+//     .navsection {
+//         display: block !important;
+//     }
+//     .header {
+//         position: relative;
+//         .sm_infinite {
+//             position: absolute;
+//             top: 17px;
+//             left: 24px;
+//         }
+//         .listgroup{
+//         display: none !important;
+//         }
+
+//         .listgroup::before {
+//             display: block !important;
+//             position: absolute;
+//             top: 17px;
+//             right: 24px;
+//         }
+//     }
+
+//     .body {
+//         .bodydown {
+//             .card_group {
+//                 grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+//                 // flex-wrap: wrap;
+//                 // display: flex;
+//                 // justify-content: center;
+//                 .column {
+//                     width: 40%;
+                    
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 1000px) {
+//     .body {
+//         padding: 0% 0% !important;
+//     }
+//     .footer {
+//         .footerup {
+//             .left {
+//                 display: none !important;
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 827px) {
+//     .body {
+//         .bodyup {
+//             .help {
+//                 display: none !important;
+//             }
+//         }
+//         .bodydown {
+//             .card_group {
+//                 height: 386px;
+//                 overflow-y: scroll;
+//             }
+//         }
+//     }
+//     .bodymiddle {
+//         padding: 2% 2%;
+//         .bodydown {
+            
+//             .card_group {
+//                 justify-content: center !important;
+//             }
+//             .button_group {
+//                 justify-content: center !important;
+//             }
+//         }
+//     }
+
+// }
+
+// @media (max-width: 600px) {
+//     .items {
+//         width: 337px !important;
+//     }
+//     .focus {
+//         justify-content: center !important;
+//         .selecttext {
+//             display: none;
+            
+//         }
+//     }
+// }
