@@ -3,6 +3,7 @@
 // Your images
 import Group from "../../assets/Group.png";
 import sm_infinite from "../../assets/sm_infinite.png";
+import I from "../../assets/i.png";
 
 const plans = {
     Bubbler: {
@@ -10,6 +11,9 @@ const plans = {
         title: "Bubbler",
         gradient:
             "linear-gradient(90deg,#B05EEB 0%,#5B3CD6 52.92%,#7C67E9 100%)",
+        icon_gradient:
+            "#B18CF2",
+
 
         features: [
             <>
@@ -31,6 +35,8 @@ const plans = {
         title: "Fizz",
         gradient:
             "linear-gradient(90deg,#A63BB6 0%,#A240C6 52.92%,#9E45D2 100%)",
+        icon_gradient:
+            "#CAA1E6",
 
         features: [
             <>
@@ -53,6 +59,8 @@ const plans = {
         title: "Loop Daddy",
         gradient:
             "linear-gradient(90deg,#68EBC4 0%,#27B8CC 52.92%,#4A7BEC 100%)",
+        icon_gradient: 
+            "##47BBC1",
 
         features: [
             <>
@@ -78,6 +86,8 @@ const plans = {
         title: "Infinity Loop Enterprise",
         gradient:
             "linear-gradient(90deg,#B89E3D 0%,#ECD630 48.67%,#F1EB1C 100%)",
+        icon_gradient:
+            "#BA723D",
 
         features: [
             <>
@@ -97,6 +107,7 @@ function SmallPlanCard({
     name,
     price,
     gradient,
+    icon_gradient,
     selected,
     onClick,
     buttonText = "Try Now",
@@ -108,14 +119,13 @@ function SmallPlanCard({
             className={`
                 relative
                 w-full
-                min-h-[58px]
-                rounded-[10px]
-                px-[10px]
+                min-h-[95px]
+                rounded-[20px]
+                px-[40px]
                 py-[8px]
                 text-left
                 transition-all
-                duration-200
-                ${selected ? "ring-2 ring-[#FF1E1E]" : ""}
+                duration-200    
             `}
             style={{
                 background: gradient,
@@ -123,11 +133,11 @@ function SmallPlanCard({
         >
             <div className="flex items-center justify-between">
                 <div>
-                    <p className="font-cairo text-[11px] font-medium text-white">
+                    <p className="font-cairo text-[16px] font-bold text-white">
                         {name}
                     </p>
 
-                    <p className="font-cairo text-[10px] text-white">
+                    <p className="font-cairo text-[14px] font-bold text-white">
                         {price}
                     </p>
                 </div>
@@ -139,13 +149,33 @@ function SmallPlanCard({
                         px-[18px]
                         py-[7px]
                         font-syne
-                        text-[10px]
-                        font-medium
+                        text-[14px]
+                        font-bold
                         text-white
                     "
                 >
                     {buttonText}
                 </span>
+            </div>
+            <div className="
+                w-[16px] h-[16px]
+                rounded-[100%]
+                
+                
+                flex justify-center items-center
+                absolute
+                right-[12px]
+                top-[10px]
+                "
+                style={{
+                    background: icon_gradient,
+                }}
+            >
+                <img src={I} alt="" className="
+                    text-white w-[2px] h-[8px]
+                    
+                    "
+                ></img>
             </div>
         </button>
     );
@@ -301,7 +331,7 @@ export default function PlanPage() {
         <>
             <div
                 className="
-                    Plan_page
+                    PlanResponsivePage
                     relative
                     min-h-screen
                     w-full
@@ -436,11 +466,12 @@ export default function PlanPage() {
                     <div
                         className="
                             w-full
-                            max-w-[332px]
+                            min-w-[332px]
                             justify-self-center
                             rounded-[32px]
                             bg-white
                             p-[16px]
+
                         "
                     >
 
@@ -503,25 +534,8 @@ export default function PlanPage() {
 
 
                         {/* TRY FOR FREE */}
-
-                        <button
-                            type="button"
-                            className="
-                                mt-6
-                                w-full
-                                rounded-[10px]
-                                bg-[linear-gradient(113.87deg,#DD5690_14.81%,#FDB95F_88.76%)]
-                                py-[19px]
-                                text-center
-                                font-syne
-                                text-base
-                                font-bold
-                                leading-[140%]
-                                text-white
-                            "
-                        >
-                            Try For Free
-                        </button>
+                        
+                        
                     </div>
 
 
@@ -589,7 +603,7 @@ export default function PlanPage() {
             </div>
 
 
-            <div className="PlanResponsivePage
+            <div className="PlanPage
                 w-full
                 relative 
                 flex-col 
@@ -606,10 +620,10 @@ export default function PlanPage() {
                     box-border 
                     px-[8.6%] 
                     py-10
-                    flex 
                     justify-between
                     items-center 
                     gap-[76px]
+                    hidden
                     "
                 >
                     <div className="sm_infinite">
@@ -635,7 +649,7 @@ export default function PlanPage() {
                     </button>
                 </div>
 
-                <div className="flex flex-col justify-center mb-[34px]">        
+                <div className="flex-col justify-center mb-[34px] hidden">        
                     <p className="checktext
                         font-syne font-medium text-[32px] leading-10 tracking-[10%] text-center mb-6
                         sm:mb-0"
@@ -653,16 +667,17 @@ export default function PlanPage() {
                 <div className="body
                     box-border 
                     w-full 
-                    px-[20px] 
+                    px-[18px] 
                     py-0 
                     
                     mb-8
+                    columns-[350px]
+                    gap-8
+                    break-inside-avoid  
                     xl:px-[100px]
-                    md:px-[50px]
+                    min-[830px]:px-[50px]
                     hidden
                     md:block
-                    coloums-[332px]
-                    gap-[16px] 
                     "
                 >
                     {/* =============================
@@ -672,6 +687,9 @@ export default function PlanPage() {
                         w-full 
                         rounded-[32px] 
                         bg-white
+                        px-4 py-4
+                        mb-4
+                        break-inside-avoid
                         " 
                     >
                         <div className="w-full  flex flex-col justify-center items-center py-[10px] 
@@ -738,6 +756,8 @@ export default function PlanPage() {
                         w-full 
                         rounded-[32px] 
                         bg-white
+                        mb-4
+                        break-inside-avoid
                         "
                     >
                         <div className="w-full h-[45px] 
@@ -754,8 +774,10 @@ export default function PlanPage() {
                             </p>
                         </div>
                         <div className="w-full px-[24px] py-[21px]">
-                            <p className="font-syne font-medium text-[24px] text-center 
-                                leading-10 tracking-[10%] mb-4
+                            <p className="
+                                font-syne font-medium text-[24px] text-center 
+                                leading-10 tracking-[10%] 
+                                mb-4
                                 "
                             >
                                 Bubbler
@@ -825,6 +847,8 @@ export default function PlanPage() {
                         w-full 
                         rounded-[32px] 
                         bg-white
+                        mb-4
+                        break-inside-avoid
                         "
                     >
                         <div className="
@@ -894,6 +918,8 @@ export default function PlanPage() {
                         w-full 
                         rounded-[32px] 
                         bg-white
+                        mb-4
+                        break-inside-avoid
                         "
                     >
                         <div className="
